@@ -10,7 +10,7 @@ LABEL "homepage"="http://github.com/thrashr888/sentinel-github-actions"
 LABEL "maintainer"="Paul Thrasher"
 
 RUN apt-get update
-RUN apt-get install jq curl
+RUN apt-get -y install jq curl
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
