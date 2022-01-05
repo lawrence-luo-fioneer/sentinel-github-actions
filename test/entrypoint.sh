@@ -5,7 +5,7 @@ echo "showing working directory"
 pwd
 
 echo "running ls command"
-ls
+ls -a
 
 set +e
 OUTPUT=$(sh -c "sentinel test -verbose $*" 2>&1)
