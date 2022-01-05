@@ -1,6 +1,11 @@
 #!/bin/sh
 set -e
 cd "${STL_ACTION_WORKING_DIR:-.}"
+echo "showing working directory"
+pwd
+
+echo "running ls command"
+ls
 
 set +e
 OUTPUT=$(sh -c "sentinel test $*" 2>&1)
